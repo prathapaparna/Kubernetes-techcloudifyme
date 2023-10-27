@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: springboot-hello
+  labels:
+    app: springboot
+spec:
+  containers:
+    - name: springboot-container
+      image: techcloudifyme/springboothello:v1
+      ports:
+        - name: springboot-container
+          containerPort: 8080
+          protocol: TCP
