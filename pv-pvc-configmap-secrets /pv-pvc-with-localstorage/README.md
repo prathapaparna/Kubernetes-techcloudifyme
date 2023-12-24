@@ -1,6 +1,6 @@
 ## create atable in mysql
- - kubectl exec -it <pod-name>  /bin/bash
- - mysql -u root -p
+ - kubectl exec -it <pod-name>  /bin/bash  -> enter to pod
+ - mysql -u root -p -> enter mysql
  - show databases;
 - use mysql;
 - create table <table-name>(values)
