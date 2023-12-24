@@ -1,5 +1,11 @@
 # EKS Storage with EBS - Elastic Block Store
 
+EBS:
+----
+EBS provides block level storage volume for ec2 and container instances, we can mount them to ec2, container instances
+ebs volumes are persistantly independent even if ec2 or containers or pods got terminated we can't loss our data  
+we can change the configuration dynamically(increse or decrese size)
+
 ##  Introduction
 - Create IAM Policy for EBS
 - Associate IAM Policy to Worker Node IAM Role
