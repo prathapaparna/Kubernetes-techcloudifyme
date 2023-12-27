@@ -4,35 +4,25 @@
   - install git
   - install maven
   - install docker
-### create a package and docker image using following commands
+### create a package , docker image and push using following commands
 ```
 git clone <repalce-your-git-url>
 mvn clean istall
 docker build -t <your-docker-imagename>:<version> .
+docker login -u <username>
+docker push
 ```
-### create a dokcer network
+### create deployment
+- cd k8 -> check yaml files and replace your deatils accordingly
+- and run yaml files using below command
 ```
-docker network create springboot-mysql-net
-docker network ls
+kubectl apply -f <yaml-file-name>
 ```
-### create a docker image and create a docker container
-- create mysql container
-```
-docker run --name mysqldb --network springboot-mysql-net -e MYSQL_ROOT_PASSWORD=Admin#123 -e MYSQL_DATABASE=employeedb -d mysql
-```
-- check application.properties file and change database details accordingly
-```
-cat /src/main/resources/application.properties
-```
-- create docker container
-```
-docker run --network springboot-mysql-net --name springboot-mysql-container -p 33333:33333 -d techcloudifyme/springboot-mysql:v4
-```
-**important Note** mysql container and docker container should be on same network
+
 
 ### Create new customer using "/createnewcustomer" API
-<img width="741" alt="image" src="https://github.com/TechCloudifyMe/springboot-mysql-k8/assets/141027817/40360690-cdae-4506-9971-a6151ed7978b">
+<img width="731" alt="image" src="https://github.com/TechCloudifyMe/Kubernetes/assets/141027817/775cb70f-7f98-482f-baec-389b9e8621cb">
 
 ### Check List of customer in UI using "/listallcustomers" API
-<img width="595" alt="image" src="https://github.com/TechCloudifyMe/springboot-mysql-k8/assets/141027817/2bd8cbb1-4566-474c-b234-e409835f0cb4">
+<img width="716" alt="image" src="https://github.com/TechCloudifyMe/Kubernetes/assets/141027817/1f628382-6957-4988-bcf2-509f310a010c">
 
