@@ -8,3 +8,5 @@
 - Specific Pods (Pods matching a label are allowed)
 - Specific Namespaces (all Pods in the namespace are allowed)
 - IP address blocks (endpoints with an IP address in the block are allowed)
+
+  https://spacelift.io/blog/kubernetes-network-policy
