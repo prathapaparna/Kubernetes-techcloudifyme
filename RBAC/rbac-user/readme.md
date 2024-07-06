@@ -40,12 +40,14 @@ data:
   mapUsers: |
     - userarn: arn:aws:iam::533267082839:user/dev
       username: dev
-      groups:
-        - system:masters
+      #groups:
+       # - system:masters
     - userarn: arn:aws:iam::533267082839:user/devops
       username: devops
-      groups:
-        - system:masters
+      #groups:
+       # - system:masters
+## system
+Group: If the user is mapped to the system:masters group in the aws-auth ConfigMap, they will have full admin access to the cluster.
 ```
 # 4. Test new users
 **test new user they have get pod permissions or not**
@@ -59,7 +61,7 @@ kubectl auth can-i get pods --as arn:aws:iam::533267082839:user/devops
 aws sts get-caller-identity
 kubectl get pods
 ```
-- if you observe the user can't get the pods
+- if you observe the user can't get the pods, we are getting error, as we have not assigned any role with the user. Lets create role and role-binding
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/447c8788-a40e-4d43-90de-38eeb7a36930)
 
 **unset the user and create roles and rolebinding**
