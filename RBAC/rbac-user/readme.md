@@ -17,5 +17,28 @@
 
 # 2. Create rbac-user dev and devops
 - create dev user and devops user in aws and get access key and secrets access key and update in the sh files
-- 
+# 3.	MAP user to K8S
+
+**Add the user details to aws-auth.yaml and apply it to k8s cluster, so that we can map users to k8s.**
+
+**kubectl edit configmap -n kube-system aws-auth -o yaml** 
+  cat aws-auth.yaml 
+    apiVersion: v1
+    data:
+      mapRoles: |
+        - groups:
+          - system:bootstrappers
+          - system:nodes
+          rolearn: arn:aws:iam::533267082839:role/eksctl-eksdemo-nodegroup-eksdemo-NodeInstanceRole-AGRI5C4SXGJC
+          username: system:node:{{EC2PrivateDNSName}}
+    kind: ConfigMap
+    metadata:
+      name: aws-auth
+      namespace: kube-system
+    data:
+      mapUsers: |
+         - userarn: arn:aws:iam::533267082839:user/dev
+           username: dev
+         - userarn: arn:aws:iam::533267082839:user/devops
+           username: devops
 
