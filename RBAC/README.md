@@ -19,3 +19,8 @@
 - RoleBindings represent the links between your Roles and Users or Service Accounts. A RoleBinding lets you reference a Role, then grant those permissions to one or more users (termed Subjects).
 ## ClusterRoleBinding: 
 - ClusterRoleBinding is equivalent to RoleBinding, but targets ClusterRole resources instead of Roles.
+ 
+kubectl api-versions command—if the rbac.authorization.k8s.io API exists, then you’re ready to use RBAC:
+```
+kubectl api-versions | grep rbac
+```
