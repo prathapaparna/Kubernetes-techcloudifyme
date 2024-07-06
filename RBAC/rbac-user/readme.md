@@ -22,6 +22,8 @@
 **Add the user details to aws-auth.yaml and apply it to k8s cluster, so that we can map users to k8s.**
 
 **kubectl edit configmap -n kube-system aws-auth -o yaml** 
+
+
   cat aws-auth.yaml 
     apiVersion: v1
     data:
