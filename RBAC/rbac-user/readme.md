@@ -24,23 +24,27 @@
 **kubectl edit configmap -n kube-system aws-auth -o yaml** 
 
 
-    cat aws-auth.yaml 
-    apiVersion: v1
-    data:
-      mapRoles: |
-        - groups:
-          - system:bootstrappers
-          - system:nodes
-          rolearn: arn:aws:iam::533267082839:role/eksctl-eksdemo-nodegroup-eksdemo-NodeInstanceRole-AGRI5C4SXGJC
-          username: system:node:{{EC2PrivateDNSName}}
-    kind: ConfigMap
-    metadata:
-      name: aws-auth
-      namespace: kube-system
-    data:
-      mapUsers: |
-         - userarn: arn:aws:iam::533267082839:user/dev
-           username: dev
-         - userarn: arn:aws:iam::533267082839:user/devops
-           username: devops
+cat aws-auth.yaml 
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aws-auth
+  namespace: kube-system
+data:
+  mapRoles: |
+    - groups:
+      - system:bootstrappers
+      - system:nodes
+      rolearn: arn:aws:iam::533267082839:role/eksctl-eksdemo-nodegroup-eksdemo-n-NodeInstanceRole-lDzqWls5c3dG
+      username: system:node:{{EC2PrivateDNSName}}
+  mapUsers: |
+    - userarn: arn:aws:iam::533267082839:user/dev
+      username: dev
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::533267082839:user/devops
+      username: devops
+      groups:
+        - system:masters
+
 
