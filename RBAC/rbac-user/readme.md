@@ -15,3 +15,7 @@
 **# kubectl apply -f deployment.yaml** 
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/0bdb905f-05dc-472a-8993-00cebba76066)
 
+# 2. Create rbac-user dev and devops
+- create dev user and devops user in aws and get access key and secrets access key and update in the sh files
+- 
+
