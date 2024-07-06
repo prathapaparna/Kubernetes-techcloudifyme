@@ -53,12 +53,15 @@ data:
 kubectl auth can-i get pods --as arn:aws:iam::533267082839:user/dev
 kubectl auth can-i get pods --as arn:aws:iam::533267082839:user/devops
 ```
-**switch the user and and check**
+**switch the user and and check** 
 ```
 . dev-user-creds.sh
 aws sts get-caller-identity
+kubectl get pods
 ```
-![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/57fc38af-d175-44fc-aef5-8c2cb756448c)
+- if you observe the user can't get the pods
+![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/447c8788-a40e-4d43-90de-38eeb7a36930)
+
 **unset the user and create roles and rolebinding**
 ```
 # unset AWS_SECRET_ACCESS_KEY 
