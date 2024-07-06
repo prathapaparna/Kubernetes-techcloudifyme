@@ -13,3 +13,5 @@
 # 1.Install ngnix application.
 
 **# kubectl apply -f deployment.yaml** 
+![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/0bdb905f-05dc-472a-8993-00cebba76066)
+
