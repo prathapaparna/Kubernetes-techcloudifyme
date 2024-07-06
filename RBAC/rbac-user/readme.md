@@ -69,6 +69,15 @@ kubectl get pods
 # unset AWS_SECRET_ACCESS_KEY 
 # unset AWS_ACCESS_KEY_ID
 ```
+```
+vi devops-role.yaml
+vi dev-rolebinding.yaml
+kubectl apply -f dev-role.yaml
+kubectl apply -f dev-rolebinding.yaml
+```
+- accoring to roles dev user can only get and list the pods but can't delete
+![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/fe412622-e242-4800-9269-2d1756a38cdf)
+
 
 
 
