@@ -23,7 +23,7 @@
 
 **kubectl edit configmap -n kube-system aws-auth -o yaml** 
 
-
+```
 cat aws-auth.yaml 
 apiVersion: v1
 kind: ConfigMap
@@ -46,5 +46,7 @@ data:
       username: devops
       groups:
         - system:masters
+```
+
 
 
