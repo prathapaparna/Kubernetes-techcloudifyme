@@ -9,3 +9,7 @@
 4.	Test new users
 5.	Create role and binding
 6.	Verify role and binding
+
+# 1.Install ngnix application.
+
+**# kubectl apply -f deployment.yaml** 
