@@ -10,3 +10,12 @@
 - before previous version(1.24) when we create sa it will automatically create a secret
 ## User Account:
 - Designed for human users, cluster-wide, managed externally, and authenticated via external credentials
+
+## Role: 
+- A Role is a collection of permissions that allow users to perform specific actions (verbs, such as “get”, “create”, “and “delete”) on a defined set of Kubernetes resource types (such as Pods, Deployments, and Namespaces). Roles are namespaced objects; the permissions they grant only apply within the namespace that the Role belongs to.
+## ClusterRole: 
+- ClusterRoles work similarly to Roles but are a non-namespaced alternative for cluster-level resources. You’ll need to use a ClusterRole to control access to objects such as Nodes, which don’t belong to any namespace. ClusterRoles also allow you to globally access namespaced resources across all namespaces, such as every Pod in your cluster.
+## RoleBinding: 
+- RoleBindings represent the links between your Roles and Users or Service Accounts. A RoleBinding lets you reference a Role, then grant those permissions to one or more users (termed Subjects).
+## ClusterRoleBinding: 
+- ClusterRoleBinding is equivalent to RoleBinding, but targets ClusterRole resources instead of Roles.
