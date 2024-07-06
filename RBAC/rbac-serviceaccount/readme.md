@@ -22,6 +22,18 @@
 
 - here sao service account don't have roles that's why its not able to get pods
 
+![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/e82f0b54-0bf2-4b12-8063-c6d779311500)
+
+![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/fcd20473-edce-4d08-bcd2-80c2bebb363b)
+
+![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/d854f420-3d27-4513-bd13-ac939679bda9)
+
+![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/5616d515-c57e-41d2-8cb7-bba1eb07fe8e)
+
+
+
+
+
 
 
 
