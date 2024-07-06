@@ -47,6 +47,12 @@ data:
       groups:
         - system:masters
 ```
+# 4. Test new users
+**test new user they have get pod permissions or not**
+```
+kubectl auth can-i get pods --as arn:aws:iam::533267082839:user/dev
+kubectl auth can-i get pods --as arn:aws:iam::533267082839:user/devops
+```
 
 
 
