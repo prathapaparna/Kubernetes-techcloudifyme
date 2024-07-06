@@ -1,4 +1,6 @@
 # RBAC
+![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/c3109c18-cebc-4b0f-9cdc-da367b69f090)
+
 - RBAC (Role-Based Access Control):
 - RBAC is a Kubernetes feature that allows you to control access to the Kubernetes API and resources based on roles and role bindings. 
 - RBAC defines roles and role bindings that determine what actions a user, group, or service account can perform.
