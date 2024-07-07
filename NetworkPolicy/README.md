@@ -5,8 +5,8 @@
 - Each Network Policy you create targets a group of Pods and sets the Ingress (incoming) and Egress (outgoing) network endpoints those Pods can communicate with.
 
 - There are three different ways to identify target endpoints:
-    **Specific Pods** (Pods matching a label are allowed)
-    **Specific Namespaces** (all Pods in the namespace are allowed)
-    **IP address blocks** (endpoints with an IP address in the block are allowed)
+  - **Specific Pods** (Pods matching a label are allowed)
+  - **Specific Namespaces** (all Pods in the namespace are allowed)
+  - **IP address blocks** (endpoints with an IP address in the block are allowed)
 
   https://spacelift.io/blog/kubernetes-network-policy
