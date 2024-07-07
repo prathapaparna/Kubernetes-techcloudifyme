@@ -1,4 +1,4 @@
-## rbac-with-serviceaccount-demo
+## rbac-with-serviceaccount-demo for access kube api
 ### create 2 namespaces for sao and cao
 ```
 kubectl create ns cao
@@ -38,6 +38,10 @@ kubectl get pods
   ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/8257fcd6-9726-41ab-86a9-fd8bcb91279b)
 
 - here sao service account don't have roles that's why its not able to get pods
+
+  --------------------------------
+
+  ## rbac-with-serviceaccount-demo for access external services (ex: s3 bucket)
 
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/e82f0b54-0bf2-4b12-8063-c6d779311500)
 
