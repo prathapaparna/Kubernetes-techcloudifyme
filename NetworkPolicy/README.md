@@ -17,7 +17,8 @@
   ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/554d79b3-85fc-44bd-bf72-1e3ed2c5df11)
   
 
-  https://spacelift.io/blog/kubernetes-network-policy
+  - https://spacelift.io/blog/kubernetes-network-policy
+  - https://docs.tigera.io/calico/latest/getting-started/kubernetes/managed-public-cloud/eks
 
   ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/93c54069-9af8-48a3-8d9d-2d999c291795)
 
