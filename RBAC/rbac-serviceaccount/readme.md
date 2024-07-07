@@ -4,7 +4,13 @@
 kubectl create ns cao
 kubectl create ns sao
 ```
-
+### create sa,role,rolebinding, and create a pod by attching sa
+```
+kubectl apply -f cao-sa.yaml
+kubectl apply -f cao-role.yaml
+kubectl apply -f cao-rolebinding.yaml
+kubectl apply -f
+```
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/10fd1c6f-b974-46e7-8f53-2b3da06fb8d4)
 
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/dc8f3cc2-1dd1-463e-bf35-b291ecded7e2)
