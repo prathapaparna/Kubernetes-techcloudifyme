@@ -8,7 +8,8 @@
   - **Specific Pods** (Pods matching a label are allowed)
   - **Specific Namespaces** (all Pods in the namespace are allowed)
   - **IP address blocks** (endpoints with an IP address in the block are allowed)
-**uses**
+    
+**uses:**
 - Ensuring a database can only be accessed by the app it’s part of
 - Isolating Pods from your cluster’s network
 - Allow specific apps or namespaces to communicate with each other
