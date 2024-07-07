@@ -4,14 +4,15 @@
 kubectl create ns cao
 kubectl create ns sao
 ```
+
+![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/10fd1c6f-b974-46e7-8f53-2b3da06fb8d4)
 ### create sa,role,rolebinding, and create a pod by attching sa
 ```
 kubectl apply -f cao-sa.yaml
 kubectl apply -f cao-role.yaml
 kubectl apply -f cao-rolebinding.yaml
-kubectl apply -f
+kubectl apply -f cao-kubectl-pod.yaml
 ```
-![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/10fd1c6f-b974-46e7-8f53-2b3da06fb8d4)
 
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/dc8f3cc2-1dd1-463e-bf35-b291ecded7e2)
 
@@ -20,6 +21,11 @@ kubectl apply -f
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/18ada300-0776-40d8-80b8-4c8ba9896e2d)
 
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/783b2acb-e47d-47fb-b38b-73a0c0955a5e)
+### login to pod and check to able get pods are not
+```
+kubectl exec -it <pod-name> -- /bin/bash
+kubectl get pods
+```
 
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/32104eda-4dce-416a-b98e-170e7c5cbb36)
 
