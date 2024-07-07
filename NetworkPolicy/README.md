@@ -18,3 +18,6 @@
   
 
   https://spacelift.io/blog/kubernetes-network-policy
+
+  ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/93c54069-9af8-48a3-8d9d-2d999c291795)
+
