@@ -13,4 +13,8 @@
 - Ensuring a database can only be accessed by the app it’s part of
 - Isolating Pods from your cluster’s network
 - Allow specific apps or namespaces to communicate with each other
+
+  ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/554d79b3-85fc-44bd-bf72-1e3ed2c5df11)
+  
+
   https://spacelift.io/blog/kubernetes-network-policy
