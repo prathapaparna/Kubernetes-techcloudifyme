@@ -1,4 +1,9 @@
 ## rbac-with-serviceaccount-demo
+### create 2 namespaces for sao and cao
+```
+kubectl create ns cao
+kubectl create ns sao
+```
 
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/10fd1c6f-b974-46e7-8f53-2b3da06fb8d4)
 
