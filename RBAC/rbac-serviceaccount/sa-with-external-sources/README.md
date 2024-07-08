@@ -54,7 +54,13 @@ aws iam create-policy --policy-name irsa-iam-policy --policy-document file://irs
 
 - check iam-policy is created or not in aws console
 
+  ```
+  eksctl create iamserviceaccount --name irsa-sa --namespace irsa-demo --cluster eksdemo --region us-east-1 --role-name irsa-iam-role \
+    --attach-policy-arn arn:aws:iam::533267082839:policy/irsa-iam-policy --approve --override-existing-serviceaccounts
+  ```
+
   ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/781bd7f8-8f83-496b-bd4e-d83ceffb345c)
+**NOTE** after creating service account check sa, iam-role and trust-policy --(trust-policy is main to enable the connection from eks to s3)	
 
   <img width="608" alt="image" src="https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/3075c28e-5ae6-4193-bf26-dc64801db538">
 
