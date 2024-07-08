@@ -60,9 +60,16 @@ aws iam create-policy --policy-name irsa-iam-policy --policy-document file://irs
   ```
 
   ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/781bd7f8-8f83-496b-bd4e-d83ceffb345c)
-**NOTE** after creating service account check sa, iam-role and trust-policy --(trust-policy is main to enable the connection from eks to s3)	
+  
+**NOTE:** after creating service account check sa, iam-role and trust-policy --(trust-policy is main to enable the connection from eks to s3)	
+
+
+
 
   <img width="608" alt="image" src="https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/3075c28e-5ae6-4193-bf26-dc64801db538">
+
+  ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/33aa45c4-01cb-4cd7-92df-0d880dda9ae9)
+
 
   ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/3a980444-f596-48c3-b53b-50af4b135135)
 
