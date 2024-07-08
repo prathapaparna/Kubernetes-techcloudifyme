@@ -19,7 +19,7 @@ eksctl utils associate-iam-oidc-provider --region=us-east-1 --cluster=eksdemo --
 
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/fdbd8d26-b3f7-4622-b1ac-cca395021257)
 
-- or else you can add provider manually
+- or else you can add provider manually by selecting add provider
 
 I have created s3 bucket and upload sample file in s3 bucket
 
