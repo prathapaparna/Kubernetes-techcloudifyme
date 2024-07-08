@@ -12,3 +12,45 @@ I have created s3 bucket and upload sample file in s3 bucket
 
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/4e6f5c64-7874-41c1-9693-39eb5948d5b5)
 
+## create iam policy
+----------------
+```
+vi irsa-iam-policy.json
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::irsa-test-bucket19"
+            ]
+        }
+    ]
+}
+```
+
+![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/e4039841-b69d-4525-9dbd-ce597c9da92c)
+
+- check iam-policy is created or not in aws console
+
+  ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/781bd7f8-8f83-496b-bd4e-d83ceffb345c)
+
+  <img width="608" alt="image" src="https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/3075c28e-5ae6-4193-bf26-dc64801db538">
+
+  ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/3a980444-f596-48c3-b53b-50af4b135135)
+
+  ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/1c391608-3869-4a28-88a7-b8d05217bef1)
+
+  ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/89624bef-c2ba-41e7-9c56-3c0ee178a1fc)
+
+
+
+
+
+
+
