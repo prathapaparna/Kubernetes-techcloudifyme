@@ -46,6 +46,9 @@ vi irsa-iam-policy.json
     ]
 }
 ```
+```
+aws iam create-policy --policy-name irsa-iam-policy --policy-document file://irsa-iam-policy.json
+```
 
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/e4039841-b69d-4525-9dbd-ce597c9da92c)
 
