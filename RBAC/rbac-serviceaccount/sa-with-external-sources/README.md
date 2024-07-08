@@ -53,6 +53,7 @@ aws iam create-policy --policy-name irsa-iam-policy --policy-document file://irs
 ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/e4039841-b69d-4525-9dbd-ce597c9da92c)
 
 - check iam-policy is created or not in aws console
+- create an iam-role, service account by using below command 
 
   ```
   eksctl create iamserviceaccount --name irsa-sa --namespace irsa-demo --cluster eksdemo --region us-east-1 --role-name irsa-iam-role \
@@ -69,6 +70,15 @@ aws iam create-policy --policy-name irsa-iam-policy --policy-document file://irs
   <img width="608" alt="image" src="https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/3075c28e-5ae6-4193-bf26-dc64801db538">
 
   ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/33aa45c4-01cb-4cd7-92df-0d880dda9ae9)
+
+```
+kubectl apply -f pod.yaml
+kubectl apply -f pod-sa.yaml
+kubectl exec -it aws-cli -n irsa-demo -- /bin/bash
+aws sts get-caller-identity
+aws s3 ls s3://irsa-test-bucket19
+```
+**NOTE:** observe the pods can able to access s3 bucket or not
 
 
   ![image](https://github.com/prathapaparna/Kubernetes-techcloudifyme/assets/99127429/3a980444-f596-48c3-b53b-50af4b135135)
