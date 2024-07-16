@@ -15,6 +15,9 @@ kubectl apply -f app2.yaml
 kubectl apply -f ingress-resource.yaml
 ```
 - ingress controller provide one load balancer url by using that url we can access our applications
+  
+ ![image](https://github.com/user-attachments/assets/6698c58f-9f02-424a-949a-da9dd8889108)
+ 
 
   ![image](https://github.com/user-attachments/assets/e8b2ae81-3064-4418-bddd-d7c2c5612e42)
 
