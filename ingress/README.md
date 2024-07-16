@@ -1,3 +1,19 @@
+**Note**: 
+- we have k8 service, service itself provide using
+  - 1. service discovery: (automatically takes the pod new ip)
+  - 2. load balancing
+  - 3. expose the application to outside world
+
+## drawback with k8-service:
+----------------
+**1.** it can't provide 
+ssl/tls termination
+path/host based routing, raito based routing
+
+**2.** if we use loadbalancer service mode, each application will take one load-balancer so that cloud provider will charge us.
+
+- ingress can provide all above features, it will create one loadbalancer
+  
 # Ingress
 - Kubernetes Ingress is a powerful way to manage external access to your services, providing capabilities like load balancing, SSL termination, and routing rules. By deploying an Ingress controller and creating Ingress resources, we can efficiently manage HTTP/S traffic in your Kubernetes cluster.
   
@@ -22,3 +38,5 @@
 - Ingress Controller Watches for Changes: The Ingress controller continuously watches the Kubernetes API for new or updated -Ingress resources.
 - Update Configuration: When the Ingress controller detects changes, it updates its internal configuration to reflect the new routing rules.
 - Handle Incoming Traffic: The Ingress controller intercepts incoming traffic to the cluster and routes it based on the rules defined in the Ingress resources.
+
+  
