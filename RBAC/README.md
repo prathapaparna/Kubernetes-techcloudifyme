@@ -7,7 +7,7 @@
 
 
 ## Service Account:
-- a Service Account (SA) is an identity for processes that run in a Pod. This identity can be used to authenticate and authorize access to the Kubernetes API. Service accounts are used primarily by applications running inside the cluster to interact with the Kubernetes API.
+- a Service Account (SA) is an identity for processes that run in a Pod. This identity can be used to authenticate(who is user) and authorize(what they can access) access to the Kubernetes API. Service accounts are used primarily by applications running inside the cluster to interact with the Kubernetes API.
 - Designed for applications running in the cluster, scoped to namespaces, managed by Kubernetes, and authenticated via tokens. - when you create a namespace by default one default service account will create. When a pod is created, it is automatically assigned a default service account unless specified otherwise.
 - before previous version(1.24) when we create sa it will automatically create a secret
 ## User Account:
