@@ -27,10 +27,9 @@ kubectl taint nodes <node-name> key=value:NoExecute #replace node name and key v
  we tained 173 node with noExcute, so pod3 evicted from there and created in another node
  
 ## toleration
-     A toleration is applied to a pod to indicate that it can tolerate a node's taint, allowing it to be scheduled on that node despite the taint.
+- A toleration is applied to a pod to indicate that it can tolerate a node's taint, allowing it to be scheduled on that node despite the taint.
 
 ### Toleration Structure:
-   A toleration consists of the following:
 
 **Key:** The key of the taint.
 
