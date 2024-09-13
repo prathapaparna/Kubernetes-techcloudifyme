@@ -60,7 +60,7 @@ kubectl label node ip-192-168-31-173.ec2.internal app=ngnix
 ![image](https://github.com/user-attachments/assets/bbca058b-26a3-4607-b594-cc26fa597f33)
 
 ![image](https://github.com/user-attachments/assets/a8eda397-d6e6-49b5-8649-430e7a734485)
-![image](https://github.com/user-attachments/assets/b1cef384-8ce0-49b5-906d-9d1c58fb5551)
+
 
 **Observation** all pods are created on this node only
 
