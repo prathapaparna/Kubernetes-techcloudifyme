@@ -5,7 +5,7 @@
 - Taints prevent pods from being scheduled on nodes unless the pod has a matching toleration.
 **Taint Structure:**
   
-- A taint consists of three parts:
+### A taint consists of three parts:
 
 - **Key:** A string that represents the taint.
 - **Value:** An optional value for the taint.
@@ -18,18 +18,41 @@
        
 - I tained one node with noExcute, the existing pods evicted from there(because its not tolerate)
 ```
-kubectl taint nodes <node-name> key=value:NoExecute #replace node name 
+kubectl taint nodes <node-name> key=value:NoExecute #replace node name and key value 
 ```
 
 ![image](https://github.com/user-attachments/assets/88f00624-c16e-4011-b30f-8b2883f011d5)
 
-![image](https://github.com/user-attachments/assets/5a1b9d00-b651-48c5-adba-2ba813b6cc87)
+**observation:**
+ we tained 173 node with noExcute, so pod3 evicted from there and created in another node
+ 
+## toleration
+     A toleration is applied to a pod to indicate that it can tolerate a node's taint, allowing it to be scheduled on that node despite the taint.
 
-I created pods with toleration as same key value pair
+### Toleration Structure:
+   A toleration consists of the following:
 
-the pods might created or not created in same node
+**Key:** The key of the taint.
+
+**Operator:** Defines the relationship between the toleration and the taint. Can be Equal (default) or Exists (matches any 
+        taint with that key, ignoring the value).
+        
+**Value:** The value of the taint (optional, used if the operator is Equal).
+
+**Effect:** The same as the taint effect (NoSchedule, PreferNoSchedule, or NoExecute).
+
+**TolerationSeconds:** For NoExecute taints, defines how long the pod can tolerate the taint before being evicted. 
+
+### add toleration to pods
+
+![image](https://github.com/user-attachments/assets/134256b4-04a1-49ed-a6eb-e74067326ca6)
+
+
+### I created pods with toleration as same key value pair
 
 ![image](https://github.com/user-attachments/assets/d6e410aa-ab42-4f65-b0cf-c62a579f214d)
+
+**observation** the pods might created or not created in same node
 
 # Along with taints try to use nodeselector:
 ```
