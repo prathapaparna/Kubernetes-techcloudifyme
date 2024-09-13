@@ -39,9 +39,6 @@ wget -qO- http://10.100.180.91
 
 ![image](https://github.com/user-attachments/assets/f2485a0c-519f-4970-b21c-ea6f5c6d229a)
 
-```
-
-![image](https://github.com/user-attachments/assets/a567336f-48a4-494c-a160-2f9a4d724a57)
 
 ```
 # Test using ClusterIP:
@@ -51,6 +48,10 @@ curl http://10.100.180.91
 curl http://nginx-service-cip.default.svc.cluster.local
 
 ```
+
+
+![image](https://github.com/user-attachments/assets/a567336f-48a4-494c-a160-2f9a4d724a57)
+
 
 
 **Note:**
