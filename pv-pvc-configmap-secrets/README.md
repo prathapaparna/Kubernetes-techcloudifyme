@@ -20,5 +20,16 @@
  dynamically provision persistent volumes (PV) in a Kubernetes cluster. 
  Kubernetes administrators define classes of storage, 
 and then pods can dynamically request the specific type of storage they need
+```
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-storage
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
+```
+**volumeBindingMode:**
 
-- **Important Note:** `WaitForFirstConsumer` mode will delay the volume binding and provisioning  of a PersistentVolume until a Pod using the PersistentVolumeClaim is created.
+- **Immediate:** Volume binding happens as soon as the PVC is created, regardless of pod scheduling. Suitable for networked/cloud storage that is accessible cluster-wide.
+  
+- **WaitForFirstConsumer:** Volume binding is delayed until the pod is scheduled, ensuring that the volume is bound to a PV that is local to the pod's node. Ideal for node-local storage where the physical location of the volume matters.
