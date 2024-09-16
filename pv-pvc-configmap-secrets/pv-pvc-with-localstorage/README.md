@@ -56,7 +56,7 @@ spec:
     path: "/mnt/data"
   persistentVolumeReclaimPolicy: Retain
 ```
-The persistentVolumeReclaimPolicy in a Kubernetes PersistentVolume (PV) defines what happens to the PV after the PersistentVolumeClaim (PVC) that was using it is deleted. Essentially, it controls the behavior of the volume when it is no longer bound to a claim.
+The **persistentVolumeReclaimPolicy** in a Kubernetes PersistentVolume (PV) defines what happens to the PV after the PersistentVolumeClaim (PVC) that was using it is deleted. Essentially, it controls the behavior of the volume when it is no longer bound to a claim.
 
 - **Retain:** Retain means the PV will remain exist after its associated PVC is deleted. The data will not be lost, and you will need to manually manage the volume if you want to reuse or delete it.
 - **Recycle:** (Less common) Use when you need to clean the PV and make it available for reuse without keeping the data. Useful in basic scenarios where the PV can be used multiple times for different PVCs after being cleaned.(only for static pv not for dynamic)
