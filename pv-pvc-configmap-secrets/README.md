@@ -30,6 +30,6 @@ volumeBindingMode: WaitForFirstConsumer
 ```
 **volumeBindingMode:**
 
-- **Immediate:** Volume binding happens as soon as the PVC is created, regardless of pod scheduling. Suitable for networked/cloud storage that is accessible cluster-wide.
+- **Immediate:** Volume binding happens as soon as the PVC is created, regardless of pod scheduling. 
   
-- **WaitForFirstConsumer:** Volume binding is delayed until the pod is scheduled, ensuring that the volume is bound to a PV that is local to the pod's node. Ideal for node-local storage where the physical location of the volume matters.
+- **WaitForFirstConsumer:** Volume binding is delayed until the pod is scheduled.
