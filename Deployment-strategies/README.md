@@ -25,7 +25,9 @@
 ## canary deployment(real-traffic-testing)
 
 **canary-deployment:** Canary deployment is a technique used to reduce the risk of introducing a new version of software into **production** by gradually rolling out the change to a small set of users before making it available to the wider audience.
-![image](https://github.com/user-attachments/assets/7e157a3f-afd7-480e-ae05-e2e6eab70e7a)
+
+![image](https://github.com/user-attachments/assets/893086f1-9d87-4c3a-8ea3-7e47b0717e54)
+
 
 
 - UAT, QA, and pre-prod environments are similar to production but may have different configurations. By using canary deployment, we can achieve real traffic testing and gradually increase traffic to the new version
