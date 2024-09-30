@@ -22,6 +22,16 @@
 **Blue-Green deployment:** Deploy the new version to the blue environment.Test and verify the blue environment.Switch traffic from green to blue by updating the service.
 
 
-## canary deployment
+## canary deployment(real-traffic-testing)
 
-**canary-deployment:** Deploy a few instances of the new version alongside the old version.Gradually increase traffic to the new version while monitoring.Once validated, switch all traffic to the new version.
+**canary-deployment:** Canary deployment is a technique used to reduce the risk of introducing a new version of software into **production** by gradually rolling out the change to a small set of users before making it available to the wider audience.
+![image](https://github.com/user-attachments/assets/7e157a3f-afd7-480e-ae05-e2e6eab70e7a)
+
+
+- UAT, QA, and pre-prod environments are similar to production but may have different configurations. By using canary deployment, we can achieve real traffic testing and gradually increase traffic to the new version
+
+
+
+
+![image](https://github.com/user-attachments/assets/a4758325-c9b3-429f-ad1c-6f1fffa3ed8b)
+
