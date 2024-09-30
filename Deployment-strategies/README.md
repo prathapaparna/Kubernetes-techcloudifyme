@@ -17,9 +17,10 @@
 - To achieve this, **Readiness probes** are used:
 - Once the readiness probe detects the new version of the application is available, the old version of the application is removed. If there is a problem, the rollout can be stopped and rolled back to the previous version, avoiding downtime across the entire cluster.
 
-## blue-green deployment
+## blue-green deployment(costly)
 
 **Blue-Green deployment:** Deploy the new version to the blue environment.Test and verify the blue environment.Switch traffic from green to blue by updating the service.
+- In Blue-Green Deployment, two environments (blue and green) are maintained. The blue environment is the old version of the application, and the green environment is the new version. Traffic is only switched to the green environment after it's validated.
 
 
 ## canary deployment(real-traffic-testing)
