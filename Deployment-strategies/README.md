@@ -11,6 +11,11 @@
 
 
 **Rolling update:** Start new pods with the new version and Gradually scale down the old pods as the new ones become ready.
+ - An example Spec: section in the manifest file could look like this:
+![image](https://github.com/user-attachments/assets/0fd6f749-c5bb-4175-b3dc-c541d6f8bec5)
+- To achieve this, **Readiness probes** are used:
+- Once the readiness probe detects the new version of the application is available, the old version of the application is removed. If there is a problem, the rollout can be stopped and rolled back to the previous version, avoiding downtime across the entire cluster.
+
 
 **Blue-Green deployment:** Deploy the new version to the blue environment.Test and verify the blue environment.Switch traffic from green to blue by updating the service.
 
