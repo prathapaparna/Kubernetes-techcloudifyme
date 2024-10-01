@@ -49,4 +49,7 @@ spec:
 - **podAffinity:** The pod will only be scheduled on a node where a pod with the label **app: frontend** is already running.
 - **topologyKey:** Specifies that the affinity rule should be applied at the node level (kubernetes.io/hostname refers to individual nodes).
 
-| name | description |
+| name | Description |
+| --- | --- |
+| Node Affinity | When you need to ensure your pod runs on a specific type of node (e.g., nodes with certain hardware, or in specific regions). |
+| Pod Affinity | When you want your pod to be located with other specific pods (e.g., pods that need to share resources or data). |
