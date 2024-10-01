@@ -51,5 +51,5 @@ spec:
 
 | name | Description |
 | --- | --- |
-| Node Affinity | When you need to ensure your pod runs on a specific type of node (e.g., nodes with certain hardware, or in specific regions). |
-| Pod Affinity | When you want your pod to be located with other specific pods (e.g., pods that need to share resources or data). |
+| **Node Affinity** | When you need to ensure your pod runs on a specific type of node (e.g., nodes with certain hardware, or in specific regions). |
+| **Pod Affinity**| When you want your pod to be located with other specific pods (e.g., pods that need to share resources or data). |
