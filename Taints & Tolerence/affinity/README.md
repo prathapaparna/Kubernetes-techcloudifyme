@@ -55,3 +55,11 @@ spec:
 | --- | --- |
 | **Node Affinity** | When you need to ensure your pod runs on a specific type of node (e.g., nodes with certain hardware, or in specific regions). |
 | **Pod Affinity**| When you want your pod to be located with other specific pods (e.g., pods that need to share resources or data). |
+
+**Note:**
+- **Node Selector** is simpler and quicker to implement for straightforward scheduling based on labels.(exact match)
+- **Node Affinity** offers more powerful and flexible scheduling, allowing for complex placement logic using operators like In, Exists, and NotIn.(we can provide multiple matches)
+    - **In:** Match nodes where a label has one of several values.
+    - **NotIn:** Exclude nodes with certain label values.
+    - **Exists:** Match nodes where a label exists.
+
