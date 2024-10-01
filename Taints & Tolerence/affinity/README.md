@@ -22,6 +22,8 @@ spec:
     image: nginx
 ```
 - **nodeAffinity:** The pod will only be scheduled on nodes where the label region is set to us-east.
+- **requiredDuringSchedulingIgnoredDuringExecution:** Must match during scheduling; otherwise, the pod won’t be scheduled.
+- **preferredDuringSchedulingIgnoredDuringExecution:** Preferred nodes are selected, but not strictly required.
 
 # Pod Affinity
 - **Pod Affinity** ensures that a pod is scheduled on a node where other specific pods are already running. This is useful when certain workloads need to be co-located.
