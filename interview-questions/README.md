@@ -6,5 +6,7 @@
 
 ## Observability vs monitoring
 -  monitoring tells you when something is wrong, and observability helps you understand why it's wrong.
--  ![image](https://github.com/user-attachments/assets/99bcb248-8be8-4159-ac58-439118c0412e)
+-  Monitoring is part of the abservability
+  
+   ![image](https://github.com/user-attachments/assets/99bcb248-8be8-4159-ac58-439118c0412e)
 
