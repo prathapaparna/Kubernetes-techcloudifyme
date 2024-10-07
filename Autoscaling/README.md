@@ -6,6 +6,9 @@
 - HPA automatically scales the number of pods in a deployment or replica set based on observed CPU or memory utilization, or custom metrics (like HTTP requests).
 - It periodically checks the metrics server to assess the load on the pods and adjusts the replicas accordingly.
 
+- ![image](https://github.com/user-attachments/assets/a959e5a3-20f1-49ec-88f3-c050d5cfd702)
+
+
 ## Vertical Pod Autoscaling
 - VPA automatically adjusts the CPU and memory requests/limits of the containers in a pod based on historical and current usage.
 - It helps in resizing the resources of containers without the need to scale the number of pods.
