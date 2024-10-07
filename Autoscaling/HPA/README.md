@@ -1,3 +1,6 @@
+
+![image](https://github.com/user-attachments/assets/acd62d95-d603-44d3-a349-a3f550c5c814)
+
 before installing metric server
 ![image](https://github.com/user-attachments/assets/4ec833f9-b5fc-4dfc-9405-1283d65fbf4c)
 
