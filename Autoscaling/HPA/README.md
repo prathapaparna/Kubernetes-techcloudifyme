@@ -13,5 +13,25 @@ before installing metric server
 
 - ![image](https://github.com/user-attachments/assets/aae8064c-e26d-42d8-88ee-51bdd19f5d15)
 
+![image](https://github.com/user-attachments/assets/01a176ad-28ee-436c-9a5a-cf40ca63e754)
+
+
+![image](https://github.com/user-attachments/assets/a5e5c6e0-a919-42fa-bb2c-7194d4add9ed)
+
+![image](https://github.com/user-attachments/assets/6f61096d-ff65-451d-bb77-35a24926b56f)
+
+![image](https://github.com/user-attachments/assets/6c512f3c-3791-4c76-a32f-9113c972565c)
+
+before load
+![image](https://github.com/user-attachments/assets/04204d4f-a898-4616-8a20-742609bb12b0)
+
+after load
+![image](https://github.com/user-attachments/assets/2b838fbd-55d6-4051-8558-8c93ab140333)
+
+![image](https://github.com/user-attachments/assets/26592925-a9e3-4d3c-a963-15c6bfc5e747)
+
+
+
+
 
 
